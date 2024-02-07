@@ -1,0 +1,49 @@
+.PlansScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
+
+
+.plansScreen_info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 40%;
+    margin: 20px 30px;
+}
+
+.PlansScreen:hover {
+    opacity: 1;
+}
+
+.PlansScreen button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+}
+
+.plansBtn h3 {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px){
+    .plansScreen_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
