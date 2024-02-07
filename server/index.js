@@ -5,7 +5,7 @@ require('dotenv').config()
 const app = express()
 
 app.use(cors({
-    origin: "https://netflix-app-nine-delta.vercel.app/",
+    origin: "https://netflix-app-nine-delta.vercel.app",
     methods: ["POST", "GET"],
     credentials: true
 }))
