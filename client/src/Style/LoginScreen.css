@@ -3,7 +3,6 @@
     height: 100vh;
     background: url("https://mebincdn.themebin.com/1664271579476.jpg") center no-repeat;
     background-size: cover;
-    overflow-y: hidden;
 }
 .loginScreen_body h1{ 
     font-size: 3.125rem;
