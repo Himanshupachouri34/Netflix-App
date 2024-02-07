@@ -11,7 +11,7 @@ function PlansScreen() {
 
 
     const paymentHandler = async(req,res) => {
-      const response = await fetch("http://localhost:2000/order", {
+      const response = await fetch("https://netflix-3niy.onrender.com/order", {
           method: "POST",
           body: JSON.stringify({
               amount,
