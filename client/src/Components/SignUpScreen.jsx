@@ -2,12 +2,15 @@ import React, { useRef } from 'react'
 import '../Style/SignUpScreen.css'
 import { authentication } from '../firestore'
 import { createUserWithEmailAndPassword , signInWithEmailAndPassword} from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
 
 
 function SignUpScreen() {
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
+  const navigate = useNavigate()
 
+  
   const register = (e) => {
     e.preventDefault();
 
@@ -19,6 +22,8 @@ function SignUpScreen() {
     )
     .then((userCredential) => {
       console.log('user signed up',userCredential);
+            navigate("/profile")
+
     })
     .catch((error) => {
       alert(error.message);
